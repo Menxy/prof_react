@@ -1,11 +1,8 @@
 import './App.css';
-import Posts from "./components/posts/Posts";
+/*import Posts from "./components/posts/Posts";*/
+import Launches from "./components/launches/Launches";
 /*Homework 2
-=====
-є API от SpaceX
-https://api.spacexdata.com/v3/launches/
-потрібно вивести всі запуски кораблів окрім 2020 року
-репрезентувати тільки окремі поля (зазначені в скрнішоті в папці)
+
 =====
 #Advance
 вивести всіх юзерів з плайсхолдеру
@@ -14,9 +11,8 @@ https://api.spacexdata.com/v3/launches/
 function App() {
 
   return (
-    <div>
-        <Posts/>
-    </div>
+    /*<div><Posts/></div>*/
+      <div><Launches/></div>
   );
 }
 

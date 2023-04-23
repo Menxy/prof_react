@@ -24,5 +24,7 @@
   flex-direction: column-reverse;
   background: darkseagreen;
 }
-
+.patch {
+  max-width: 300px;
+}
 

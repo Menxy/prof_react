@@ -474,6 +474,56 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
+let rickAndMorty = [
+    {
+        id: 6,
+        name: "Abadango Cluster Princess",
+        status: "Alive",
+        species: "Alien",
+        gender: "Female",
+        image: "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
+    },
+    {
+        id: 7,
+        name: "Abradolf Lincler",
+        status: "unknown",
+        species: "Human",
+        gender: "Male",
+        image: "https://rickandmortyapi.com/api/character/avatar/7.jpeg",
+    },
+    {
+        id: 8,
+        name: "Adjudicator Rick",
+        status: "Dead",
+        species: "Human",
+        gender: "Male",
+        image: "https://rickandmortyapi.com/api/character/avatar/8.jpeg",
+    },
+    {
+        id: 9,
+        name: "Agency Director",
+        status: "Dead",
+        species: "Human",
+        gender: "Male",
+        image: "https://rickandmortyapi.com/api/character/avatar/9.jpeg",
+    },
+    {
+        id: 10,
+        name: "Alan Rails",
+        status: "Dead",
+        species: "Human",
+        gender: "Male",
+        image: "https://rickandmortyapi.com/api/character/avatar/10.jpeg",
+    },
+    {
+        id: 11,
+        name: "Albert Einstein",
+        status: "Dead",
+        species: "Human",
+        gender: "Male",
+        image: "https://rickandmortyapi.com/api/character/avatar/11.jpeg",
+    }
+]
 
 let locations = [
     {
@@ -1165,4 +1215,4 @@ let locations = [
         "type": "city"
     }
 ];
-export {coursesTitleArray,coursesAndDurationArray,coursesArray,courses,usersList,simpsons,user,users,locations}
+export {coursesTitleArray,coursesAndDurationArray,coursesArray,courses,usersList,simpsons,user,users,locations, rickAndMorty}

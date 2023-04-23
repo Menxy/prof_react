@@ -18,3 +18,11 @@
 .simpsonInfo {
   text-align: justify;
 }
+.charsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.charWrap {
+  flex: 0 1 30%;
+}

@@ -1,4 +1,6 @@
 import './App.css';
+import Characters from "./components/characters/Characters";
+import {rickAndMorty} from "./components/arrays/arrays";
 /*import Simpsons from "./components/simpsons/Simpsons";*/
 /*import {simpsons} from "./components/arrays/arrays"*/
 
@@ -11,7 +13,7 @@ function App() {
         https://rickandmortyapi.com/
         https://rickandmortyapi.com/api/character
         Створити 6 персонажів*/}
-        Characters
+        <Characters list={rickAndMorty}/>
     </>
   );
 }

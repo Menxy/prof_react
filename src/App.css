@@ -1,31 +1,6 @@
 .App {
   text-align: center;
 }
-.simpsonsWrap {
-  display: flex;
-  flex-wrap: wrap;
-  background: azure;
-}
-.simpsonWrap {
-  text-align: center;
-  padding: 10px;
-  flex: 0 0 30%;
-}
-.simpsonPhoto {
-  height: 300px;
-  padding-top: 10px;
-}
-.simpsonInfo {
-  text-align: justify;
-}
-.charsWrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.charWrap {
-  flex: 0 1 30%;
-}
 .postsWrap {
   display: flex;
   flex-wrap: wrap;
@@ -44,3 +19,10 @@
   border-radius: 5px;
   margin-top: 7px;
 }
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  background: darkseagreen;
+}
+
+

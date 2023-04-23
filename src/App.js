@@ -1,10 +1,16 @@
 import './App.css';
 import Posts from "./components/posts/Posts";
+import {useState} from "react";
+import FullPost from "./components/fullPost/FullPost";
 
 
 function App() {
+    let [chosen, setChosen] = useState(null)
+    const lift = (pack) => {
+        setChosen({...pack})
+    }
   return (
-    <>
+    <div className='container'>
         {/*Homework 2
           з jsonplaceholder отримати всі пости в компоненту Posts.js,
           показати інформацію про кожного (id, title) з кожного поста (компонента Post)
@@ -19,8 +25,14 @@ function App() {
           вивести всіх юзерів з плайсхолдеру
           в кожного юзера має бути кнопка яка буде показувати пости цього юзера
           пости мають виводитись під компонетою Users (в App компоненті)*/}
-      <Posts/>
-    </>
+        <div>
+            <Posts lift={lift}/>
+        </div>
+        {chosen && (
+            <div className='postWrap'>
+                <FullPost chosen={chosen}/>
+            </div>)}
+    </div>
   );
 }
 

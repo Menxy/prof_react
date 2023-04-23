@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Post = ({post}) => (
+const Post = ({post,lift}) => (
     <div className='postWrap'>
         <div>Post ID - {post.id}</div>
         <div>Post title - {post.title}</div>
-        <button className='postBtn'>Post body</button>
+        <button onClick={()=>{lift(post)}} className='postBtn'>Post body</button>
     </div>
 );
 

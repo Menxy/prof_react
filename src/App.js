@@ -1,10 +1,13 @@
 import './App.css';
+import Simpsons from "./components/simpsons/Simpsons";
+import {simpsons} from "./components/simpsonsArray/SimpsonsArray";
+
 
 function App() {
   return (
-    <div className="App">
-      Hello, react, mf!
-    </div>
+    <>
+      <Simpsons simpsons={simpsons}/>
+    </>
   );
 }
 

@@ -1,3 +1,20 @@
 .App {
   text-align: center;
 }
+.simpsonsWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.simpsonWrap {
+  text-align: center;
+  padding: 10px;
+  flex: 0 0 30%;
+  background: azure;
+}
+.simpsonPhoto {
+  height: 300px;
+  padding-top: 10px;
+}
+.simpsonInfo {
+  text-align: justify;
+}

@@ -1,8 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import Post from "../post/Post";
+import FullPost from "../fullPost/FullPost";
 
-const Posts = ({lift}) => {
+
+const Posts = () => {
     let [posts, setPosts] = useState([]);
+    let [chosen, setChosen] = useState(null)
+    const lift = (pack) => {
+        setChosen({...pack})
+    }
     useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/posts')
             .then(result=>result.json())
@@ -10,12 +16,21 @@ const Posts = ({lift}) => {
                 setPosts([...result])
             })
     },[]);
+
     return (
-        <div className='postsWrap'>
-            {posts.map(post=>(
-                <Post post={post} key={post.id} lift={lift}/>
-            ))}
+        <div  className='container'>
+            <div className='postsWrap'>
+                {posts.map(post => (
+                    <Post post={post} key={post.id} lift={lift}/>
+                ))}
+            </div>
+            {chosen && (
+                <div className='postWrap'>
+                    <FullPost chosen={chosen}/>
+                </div>)}
+
         </div>
+
     )
 };
 

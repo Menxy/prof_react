@@ -7,9 +7,9 @@ import {rickAndMorty} from "./components/arrays/arrays";
 function App() {
   return (
     <>
-      {/*1. Описати всю сім'ю сімпсонів (5 персонажів)*/}
+      {/*1. Описати всю сім'ю Сімпсонів (5 персонажів)*/}
       {/*<Simpsons simpsons={simpsons}/>*/}
-      {/*2. Створити компонент який описує персонажа (властивості id,name,status,species,gender,image) з цього апі
+      {/*2. Створити компонент, що описує персонажа (властивості id,name,status,species,gender,image) з цього апі
         https://rickandmortyapi.com/
         https://rickandmortyapi.com/api/character
         Створити 6 персонажів*/}

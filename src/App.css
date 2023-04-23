@@ -26,3 +26,21 @@
 .charWrap {
   flex: 0 1 30%;
 }
+.postsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.postWrap {
+  flex: 0 1 30%;
+  margin: 10px;
+  border: solid 3px #4c9494;
+  border-radius: 7px;
+  padding: 10px;
+  background: #31a4b7;
+  color: azure;
+}
+.postBtn {
+  border-radius: 5px;
+  margin-top: 7px;
+}

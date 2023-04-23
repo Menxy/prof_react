@@ -2,7 +2,10 @@ import React, {useEffect, useState} from 'react';
 import Post from "../post/Post";
 import FullPost from "../fullPost/FullPost";
 
-
+/*з jsonplaceholder отримати всі пости в компоненту Posts.js,
+показати інформацію про кожного (id, title) з кожного поста (компонента Post)
+Зробити кнопку вибору поста, при натисканні на яку в Posts.js ви покажете детальну
+інформацію про пост(всю інфу)*/
 const Posts = () => {
     let [posts, setPosts] = useState([]);
     let [chosen, setChosen] = useState(null)

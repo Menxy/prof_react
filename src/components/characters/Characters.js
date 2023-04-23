@@ -7,7 +7,7 @@ const Characters = ({list}) => {
         <div className='charsWrap'>
             {list.map(
                 char => (
-                    <Character char={char}/>
+                    <Character char={char} key={char.id}/>
                     )
                 )
             }

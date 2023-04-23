@@ -8,7 +8,7 @@ const Simpsons = ({simpsons}) => {
         <div className='simpsonsWrap'>
             {simpsons.map(
                 simpson => (
-                    <Simpson simpson={simpson} counter={++counter}/>
+                    <Simpson simpson={simpson} key={++counter}/>
                 )
             )}
         </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const Simpson = ({simpson, counter}) => {
+const Simpson = ({simpson}) => {
     return (
-        <div className='simpsonWrap' key={counter}>
+        <div className='simpsonWrap'>
             <h3>{simpson.name} Simpson</h3>
             <div>{simpson.age} years old.</div>
             <img src={simpson.photo} alt='simpson' className='simpsonPhoto'/>

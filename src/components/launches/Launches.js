@@ -15,7 +15,7 @@ const Launches = () => {
     let keyAtt = 1;
     return (
         <div className='postsWrap'>
-            {launch.map(launch => (
+            {launch.map(launch => ( (launch.launch_year !== "2020") &&
                 <Launch launch={launch} key={keyAtt++}/>
             ))}
         </div>

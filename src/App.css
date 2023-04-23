@@ -4,12 +4,12 @@
 .simpsonsWrap {
   display: flex;
   flex-wrap: wrap;
+  background: azure;
 }
 .simpsonWrap {
   text-align: center;
   padding: 10px;
   flex: 0 0 30%;
-  background: azure;
 }
 .simpsonPhoto {
   height: 300px;

@@ -6,15 +6,17 @@ import CarForm from "../CarForm/CarForm";
 
 
 function Cars(props) {
-    let [cars,setCars] = useState([]);
+    const [cars,setCars] = useState([]);
+    const [allCars, setAllCars] = useState(null);
+    const [carUpdate, setCarUpdate] = useState(null);
     useEffect(()=>{
         carService.getAll().then(value => value.data).then(value => setCars(value))
-    },[])
+    },[allCars])
     /*console.log(cars)*/
     return (
         <div>
-            <CarForm/>
-            <div className={'carWrap'}>{cars.map(car => <Car key={car.id} car={car}/>)}</div>
+            <CarForm setAllCars={setAllCars} carUpdate={carUpdate}/>
+            <div className={'carWrap'}>{cars.map(car => <Car key={car.id} car={car} setCarUpdate={setCarUpdate}/>)}</div>
         </div>
     );
 }

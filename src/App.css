@@ -19,3 +19,10 @@
   display: flex;
   justify-content: center;
 }
+.carButton {
+  margin-top: 15px;
+  border: solid 3px transparent;
+  border-radius: 5px;
+  background: #9b0f5b;
+  color: azure;
+}

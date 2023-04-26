@@ -1,3 +1,21 @@
 .App {
   text-align: center;
 }
+.carWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.carItem {
+  flex: 0 1 15%;
+  padding: 20px;
+  margin: 20px 0 0  20px;
+  background: #e1ffbc;
+  border: solid 3px forestgreen;
+  border-radius: 5px;
+  color: #9b0f5b;
+}
+.form {
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+}

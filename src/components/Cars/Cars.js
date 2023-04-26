@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {carService} from "../../services/car.service";
 import Car from "../Car/Car";
+import CarForm from "../CarForm/CarForm";
 
 
 
@@ -12,7 +13,8 @@ function Cars(props) {
     /*console.log(cars)*/
     return (
         <div>
-            {cars.map(car=><Car key={car.id} car={car}/>)}
+            <CarForm/>
+            <div className={'carWrap'}>{cars.map(car => <Car key={car.id} car={car}/>)}</div>
         </div>
     );
 }

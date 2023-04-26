@@ -20,7 +20,7 @@
   justify-content: center;
 }
 .carButton {
-  margin-top: 15px;
+  margin: 15px 15px 0 0;
   border: solid 3px transparent;
   border-radius: 5px;
   background: #9b0f5b;

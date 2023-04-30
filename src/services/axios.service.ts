@@ -1,8 +1,10 @@
-import axios, {AxiosResponse} from "axios";
+import axios from "axios";
+import {carsBaseURL, placeBaseURL} from "../constants/urls";
 
-import {baseURL} from "../configs/urls";
-type IRes<T> = Promise<AxiosResponse<T>>
-const axiosService = axios.create({baseURL});
-/*                                       {baseURL:baseURL} */
-export {axiosService}
-export type {IRes}
+const placeAxiosService = axios.create({baseURL:placeBaseURL});
+const carsAxiosService = axios.create({baseURL:carsBaseURL});
+
+export {
+    placeAxiosService,
+    carsAxiosService
+}

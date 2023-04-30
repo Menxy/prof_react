@@ -1,0 +1,17 @@
+.Header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(54, 65, 245, 0.38);
+}
+.pageButton {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(255, 206, 238);
+    border: solid 1px transparent;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 1.2em;
+}

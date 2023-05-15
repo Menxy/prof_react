@@ -1,4 +1,3 @@
-import './App.css';
 import Cars from "./components/Cars/Cars";
 
 
